@@ -5,7 +5,7 @@ const fs = require("fs");
 
 // Options...
 const INPUT_FILE = "fhir.schema.json";
-const OUTPUT_DIR = "./output";
+const OUTPUT_DIR = "./output";  // Don't change this
 
 // Parse input json file...
 const fhirSchema = JSON.parse(fs.readFileSync(INPUT_FILE, "utf8"));
@@ -117,6 +117,8 @@ Object.keys(typeDefinitionsToCreate).forEach((definitionKey) => {
     // Add to our collection of classes...
     fhirClasses.push(fhirClass);
 });
+
+if (!fs.existsSync(OUTPUT_DIR)) { fs.mkdirSync(OUTPUT_DIR); }
 
 // Write all the classes to files...
 fhirClasses.forEach((fhirClass) => {
