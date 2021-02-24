@@ -9,7 +9,8 @@ FHIR TypeScript Classes
 1. Get the latest FHIR JSON schema
    1. A schema is included in the repository, but could be out of date.
    2. Download the JSON schema from here: https://www.hl7.org/fhir/downloads.html
-2. Update `INPUT_FILE` inside of `generateFHIRClasses.ts`
+2. Update `INPUT_FILE` inside of `generateFHIRClasses.ts` to reference the JSON schema file
+3. Install code: `npm install`
 
 ## Build TypeScript Classes
 `npm run build`
