@@ -5,7 +5,7 @@ const fs = require("fs");
 
 // Options...
 const INPUT_FILE = "fhir.schema.json";
-const OUTPUT_DIR = "./output";  // Don't change this
+const OUTPUT_DIR = "./models";  // Don't change this
 
 // Parse input json file...
 const fhirSchema = JSON.parse(fs.readFileSync(INPUT_FILE, "utf8"));
