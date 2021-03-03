@@ -6,7 +6,6 @@
     "build": "npm run generateFHIRClasses && npm run compileFHIRClasses",
     "generateFHIRClasses": "tsc && node dist/generateFHIRClasses.js",
     "compileFHIRClasses": "cd output && tsc",
-
     "test": "cd test && tsc && node test.js"
   },
   "compilerOptions": {
