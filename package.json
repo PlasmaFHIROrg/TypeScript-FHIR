@@ -13,7 +13,6 @@
   },
   "keywords": [],
   "author": "EM",
-  "license": "MIT",
   "devDependencies": {
     "@types/node": "^14.14.28",
     "tsc": "^1.20150623.0",
